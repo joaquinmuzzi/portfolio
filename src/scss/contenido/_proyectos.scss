@@ -1,14 +1,68 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-.proyectos{
-  .contenido{
+.proyectos {
+  margin-bottom: 4rem;
+
+  .contenido {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    .proyecto{
-      background-color: v.$white-50;
+    gap: 2rem;
+
+    @include m.tablet {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
-  
+
+  .proyecto {
+    background-color: v.$white-900;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border-left: 0.3rem solid v.$green;
+
+    h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 2rem;
+      color: v.$white-100;
+    }
+
+    .proyecto-subtitle {
+      margin: 0 0 1rem 0;
+      font-size: 1.3rem;
+      color: v.$white-500;
+      font-style: italic;
+    }
+
+    .proyecto-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+
+      .tag {
+        background-color: v.$white-950;
+        color: v.$green;
+        padding: 0.4rem 0.8rem;
+        border-radius: 0.3rem;
+        font-size: 1.2rem;
+        border: 0.1rem solid v.$green;
+      }
+    }
+
+    .proyecto-tasks {
+      margin: 0;
+      padding: 0 0 0 2rem;
+
+      li {
+        font-size: 1.4rem;
+        color: v.$white-300;
+        margin-bottom: 0.8rem;
+        line-height: 1.5;
+        list-style: disc;
+
+        &::marker {
+          color: v.$green;
+        }
+      }
+    }
+  }
 }
