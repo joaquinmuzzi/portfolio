@@ -15,7 +15,7 @@ CV = {
    ("Testing y calidad", "Pytest, Playwright, testing E2E, GitHub Actions (CI), ruff"),
    ("Herramientas", "Git, GitHub, GitHub Copilot, Cursor, Claude, Opencode, ClickUp, Slack"),
    ("Metodologías", "Agile, Scrum"),
-   ("Idiomas", "Español nativo; Inglés avanzado (Duolingo English Test: 130)"),
+   ("Idiomas", "Español nativo; Inglés avanzado (Duolingo English Test: 130); Alemán (en aprendizaje)"),
   ],
   "jobs": [{
    "role": "Desarrollador Backend (part-time, remoto)", "org": "Planhopper", "where": "Buenos Aires, Argentina", "when": "Diciembre 2025 – Septiembre 2026",
@@ -64,7 +64,7 @@ CV = {
    ("Testing and quality", "Pytest, Playwright, E2E testing, GitHub Actions (CI), ruff"),
    ("Tools", "Git, GitHub, GitHub Copilot, Cursor, Claude, Opencode, ClickUp, Slack"),
    ("Methodologies", "Agile, Scrum"),
-   ("Spoken languages", "Spanish (native); English (advanced, Duolingo English Test: 130)"),
+   ("Spoken languages", "Spanish (native); English (advanced, Duolingo English Test: 130); German (learning)"),
   ],
   "jobs": [{
    "role": "Backend Developer (part-time, remote)", "org": "Planhopper", "where": "Buenos Aires, Argentina", "when": "December 2025 – September 2026",
