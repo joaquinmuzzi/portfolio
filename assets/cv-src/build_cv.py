@@ -5,7 +5,7 @@ CV = {
  "es": {
   "lang": "es", "title": "CV - Joaquín Muzzi",
   "headings": ["Perfil laboral", "Habilidades", "Experiencia", "Proyectos", "Educación", "Cursos y certificaciones", "Intereses"],
-  "profile": "Desarrollador backend junior con más de 9 meses de experiencia profesional construyendo APIs REST con Python y FastAPI, modelando datos NoSQL en AWS DynamoDB y automatizando pruebas E2E con Playwright y Pytest. Técnico en Computación (egreso diciembre 2026) con formación en Deep Learning (UTN) y proyectos propios de audio y machine learning. Busco roles backend junior, remotos o híbridos.",
+  "profile": "Desarrollador backend junior con 10 meses de experiencia profesional construyendo APIs REST con Python y FastAPI, modelando datos NoSQL en AWS DynamoDB y automatizando pruebas E2E con Playwright y Pytest. Técnico en Computación (egreso diciembre 2026) con formación en Deep Learning (UTN) y proyectos propios de audio y machine learning. Busco roles backend junior, remotos o híbridos.",
   "skills": [
    ("Lenguajes", "Python, JavaScript, Java, Lua"),
    ("Backend", "FastAPI, Node.js, Express, APIs REST, autenticación JWT"),
@@ -54,7 +54,7 @@ CV = {
  "en": {
   "lang": "en", "title": "Resume - Joaquín Muzzi",
   "headings": ["Profile", "Skills", "Experience", "Projects", "Education", "Courses and certifications", "Interests"],
-  "profile": "Junior backend developer with 9+ months of professional experience building REST APIs with Python and FastAPI, modeling NoSQL data on AWS DynamoDB and automating E2E tests with Playwright and Pytest. Computing Technician (graduating December 2026) with Deep Learning training (UTN) and personal audio and machine learning projects. Looking for junior backend roles, remote or hybrid.",
+  "profile": "Junior backend developer with 10 months of professional experience building REST APIs with Python and FastAPI, modeling NoSQL data on AWS DynamoDB and automating E2E tests with Playwright and Pytest. Computing Technician (graduating December 2026) with Deep Learning training (UTN) and personal audio and machine learning projects. Looking for junior backend roles, remote or hybrid.",
   "skills": [
    ("Languages", "Python, JavaScript, Java, Lua"),
    ("Backend", "FastAPI, Node.js, Express, REST APIs, JWT authentication"),

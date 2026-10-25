@@ -50,7 +50,7 @@
   <section class="hero">
     <p class="eyebrow"><span>JOAQUÍN MUZZI</span><span class="open"><i></i><span data-i18n="open">Open to junior roles · Remote or hybrid</span></span></p>
     <h1 data-i18n="h1">Backend developer · APIs, bots and audio tools</h1>
-    <p class="lead" data-i18n="lead"></p>
+    <p class="lead" data-i18n="lead">10 months building production APIs with Python and FastAPI, plus my own projects in production and on GitHub. I co-created <a href="#projects" data-open="lexikon">Lexikon</a>, a German→English dictionary, with a friend, I lead a team of 4 on a school reports system, and I ship <a href="#projects" data-open="tonos">Tonos</a>, a local audio analyzer, with 25+ pull requests, tests and CI.</p>
     <div class="actions">
       <a class="btn solid" href="#projects" data-i18n="btn_projects">View projects</a>
       <a class="btn resume-link" href="assets/cv-en.pdf" download data-i18n="btn_resume">Resume (PDF)</a>
@@ -64,8 +64,8 @@
       <p data-i18n="stack_sub">Core technologies I work with</p>
       <div class="how">
         <b data-i18n="how_kicker">HOW I WORK</b>
-        <p data-i18n="how_text"></p>
-        <a href="#projects" data-open="gschecker" data-i18n="how_link"></a>
+        <p data-i18n="how_text">I write tests for what can break, run them in CI, and document the bug that taught me the lesson.</p>
+        <a href="#projects" data-open="gschecker" data-i18n="how_link">See the regression test story →</a>
       </div>
     </div>
     <div class="cols">
@@ -79,23 +79,112 @@
   <section id="projects" class="section">
     <h2 data-i18n="proj_title">Featured projects</h2>
     <p class="sub" data-i18n="proj_sub">Case studies with engineering deep dives</p>
-    <div class="grid" id="project-grid"></div>
+    <div class="grid" id="project-grid"><!--static:grid-->
+      <button class="card" data-id="tonos">
+        <div class="tags"><span class="tag dive">DEEP DIVE</span><span class="tag live">LIVE</span></div>
+        <h3>Tonos</h3><p class="role">Creator and maintainer · 2026</p>
+        <p class="desc">Local audio analyzer: tempo, meter, key and chords of a song, bar by bar, with a player that highlights the current chord.</p>
+        <div class="tech"><span>Python</span><span>FastAPI</span><span>PyTorch</span><span>librosa</span><span>+2</span></div>
+        <span class="more">Read the case study →</span>
+      </button>
+      <button class="card" data-id="lexikon">
+        <div class="tags"><span class="tag dive">DEEP DIVE</span><span class="tag live">LIVE</span><span class="tag ">OPEN SOURCE</span></div>
+        <h3>Lexikon</h3><p class="role">Co-creator · open source · 2026</p>
+        <p class="desc">Fast, ad-free German→English dictionary for learners, with reverse search, sentence breakdown, native audio and full grammar tables.</p>
+        <div class="tech"><span>TypeScript</span><span>React</span><span>Hono</span><span>SQLite</span><span>+3</span></div>
+        <span class="more">Read the case study →</span>
+      </button>
+      <button class="card" data-id="gschecker">
+        <div class="tags"><span class="tag dive">DEEP DIVE</span><span class="tag live">IN PRODUCTION</span></div>
+        <h3>GsChecker</h3><p class="role">Solo developer · 2025–now</p>
+        <p class="desc">Discord bot that checks World of Warcraft characters on Warmane: raid progress, gear quality and DPS per boss.</p>
+        <div class="tech"><span>Python</span><span>PostgreSQL</span><span>Groq API</span><span>Railway</span><span>+1</span></div>
+        <span class="more">Read the case study →</span>
+      </button>
+      <button class="card" data-id="sie">
+        <div class="tags"><span class="tag dive">DEEP DIVE</span><span class="tag live">IN PRODUCTION</span></div>
+        <h3>SIE · School Reports System</h3><p class="role">Team lead (4 people) · 2026</p>
+        <p class="desc">Full-stack platform to create, review and close conduct reports with 7 roles, student statements and PDF export.</p>
+        <div class="tech"><span>React</span><span>Node.js</span><span>Express</span><span>MySQL</span><span>+3</span></div>
+        <span class="more">Read the case study →</span>
+      </button>
+      <button class="card" data-id="deuchan">
+        <div class="tags"><span class="tag ">OPEN SOURCE</span></div>
+        <h3>Deuchan</h3><p class="role">Creator · open source · 2026</p>
+        <p class="desc">Browser extension that counts the time you spend watching German on YouTube, against a daily goal.</p>
+        <div class="tech"><span>JavaScript</span><span>Chrome extension</span><span>GitHub Actions</span></div>
+        <span class="more">Read the case study →</span>
+      </button>
+      <button class="card" data-id="arena">
+        <div class="tags"><span class="tag ">TEAM PROJECT</span></div>
+        <h3>Techno Mortem Arena</h3><p class="role">Team of 5 · 2026</p>
+        <p class="desc">2D fencing duel game with LAN multiplayer over UDP, our final school project.</p>
+        <div class="tech"><span>Java</span><span>libGDX</span><span>UDP</span></div>
+        <span class="more">Read the case study →</span>
+      </button>
+    <!--/static:grid--></div>
+    <!--static:cases--><noscript>
+      <div class="cases">
+        <article>
+          <h3>Tonos</h3><p>Creator and maintainer · 2026</p>
+          <h4>Problem</h4><p>Musicians who want the chords of a song either guess by ear or upload their files to a web service. I wanted something accurate, private and checkable by ear.</p>
+          <h4>What I built</h4><ul><li>Audio pipeline that combines beat, key and chord models, with my own logic to fix irregular beats and detect 5/4 and 7/4 meters.</li><li>FastAPI backend with result cache and a CLI; web interface in English and Spanish.</li><li>Player with an optional click on every beat so you can verify the analysis.</li></ul>
+          <h4>Results</h4><ul><li>25+ pull requests, tests with pytest, CI on GitHub Actions.</li><li>Releases 0.1.0 and 0.2.0 with changelog and docs on reliability and licenses.</li></ul>
+          <p><a href="https://joaquinmuzzi.github.io/Tonos/">Live demo</a> · <a href="https://github.com/joaquinmuzzi/Tonos">GitHub</a></p>
+        </article>
+        <article>
+          <h3>Lexikon</h3><p>Co-creator · open source · 2026</p>
+          <h4>Problem</h4><p>I was studying German by immersion and needed a tool like Jiten, but for German: look words up while reading or watching, without ads, accounts or slow pages. I knew Jiten through @julianel5, a friend in real life, and we became partners to build it together.</p>
+          <h4>What I built</h4><ul><li>Reverse search (English→German), autocomplete and sentence segmentation, with word frequency ranking from a Leipzig corpus word list.</li><li>Native-speaker audio with a safe text-to-speech fallback and loudness normalization; shareable URLs; light and dark themes.</li><li>Engineering around it: CI with type checks, lint and build on every PR, tests, Dockerfiles, security headers and the move to the custom domain.</li></ul>
+          <h4>Results</h4><ul><li>89 commits and 50 pull requests; the rest of the work is my partner's (@julianel5).</li><li>Live at lexikon.moe, MIT licensed, releases 0.1.0 and 0.2.0.</li></ul>
+          <p><a href="https://lexikon.moe">Live site</a> · <a href="https://github.com/julianel5/Lexikon">GitHub</a> · <a href="https://github.com/julianel5/Lexikon/pulls?q=is%3Apr+author%3Ajoaquinmuzzi">My pull requests</a></p>
+        </article>
+        <article>
+          <h3>GsChecker</h3><p>Solo developer · 2025–now</p>
+          <h4>Problem</h4><p>Players need a quick read on a character, but the data lives in scattered pages that are slow and rate limited.</p>
+          <h4>What I built</h4><ul><li>Scrapes the armory and uwu-logs, computes GearScore locally with the addon formula.</li><li>Memory + PostgreSQL cache with TTLs, stale-cache fallback, token-bucket rate limiting and a circuit breaker.</li><li>AI coach (/ia) that compares gear against best-in-slot per realm; nightly cron job.</li></ul>
+          <h4>Results</h4><ul><li>200+ commits, CI and pytest.</li><li>A regression test that documents a real production bug (wrong score) and why the fix must not be reverted.</li></ul>
+          <p><a href="https://github.com/joaquinmuzzi/GsChecker">GitHub</a></p>
+        </article>
+        <article>
+          <h3>SIE · School Reports System</h3><p>Team lead (4 people) · 2026</p>
+          <h4>Problem</h4><p>A school tracked conduct reports on paper and chats, with no history and no way for families to see what applied to them.</p>
+          <h4>What I built</h4><ul><li>Role-based access (teachers, regents, support team, students, families) with JWT.</li><li>Report lifecycle: open → in review → closed, with three interventions per report and the student's statement.</li><li>I owned the database, infrastructure, deployment and the first MVP.</li></ul>
+          <h4>Results</h4><ul><li>Running in production at E.T. N°35.</li><li>Mobile-friendly interface and downloadable PDFs for closed reports.</li></ul>
+          <p><a href="https://sistemadegestiondeinformes.netlify.app">Live app</a> · <a href="https://github.com/joaquinmuzzi/SIE">GitHub</a></p>
+        </article>
+        <article>
+          <h3>Deuchan</h3><p>Creator · open source · 2026</p>
+          <h4>Problem</h4><p>Learning by immersion only works if you know how much input you actually get.</p>
+          <h4>What I built</h4><ul><li>Counts real playback seconds once, even with several tabs playing.</li><li>Detects the video language and lets you correct it with one click.</li><li>Dashboard with heatmap, weekday chart and streak. Everything stays in your browser.</li></ul>
+          <h4>Results</h4><ul><li>17 merged pull requests so far.</li><li>Under development, not published yet.</li></ul>
+          <p><a href="https://github.com/joaquinmuzzi/deuchan">GitHub</a></p>
+        </article>
+        <article>
+          <h3>Techno Mortem Arena</h3><p>Team of 5 · 2026</p>
+          <h4>Problem</h4><p>A final project for a networking course that had to be fun to defend in front of a class.</p>
+          <h4>What I built</h4><ul><li>Multiplayer over UDP, one instance per player.</li><li>Mouse-aimed sword and thrust on click, with a delay mechanic.</li></ul>
+          <h4>Results</h4><ul><li>Built with a team of 5, tracking deliverables in ClickUp.</li></ul>
+          <p><a href="https://github.com/joaquinmuzzi/Techno-Mortem-Arena">GitHub</a></p>
+        </article>
+      </div>
+    </noscript><!--/static:cases-->
   </section>
 
   <section id="about" class="section about">
     <div>
       <h2 data-i18n="about_title">About</h2>
-      <p data-i18n="about_1"></p>
-      <p data-i18n="about_2"></p>
+      <p data-i18n="about_1">I'm a backend developer from Buenos Aires finishing a computing technician degree in December 2026. I like systems that are boring in production: cached, rate-limited, tested and documented.</p>
+      <p data-i18n="about_2">Outside code I play the piano, which is why one of my projects detects chords, and I'm learning German, which is why I work on a German dictionary and a tool that counts my listening time.</p>
     </div>
     <table class="facts">
       <caption data-i18n="facts_title">Career highlights</caption>
-      <tr><th data-i18n="f1k">Experience</th><td data-i18n="f1v"></td></tr>
-      <tr><th data-i18n="f2k">Focus</th><td data-i18n="f2v"></td></tr>
-      <tr><th data-i18n="f3k">Open source</th><td data-i18n="f3v"></td></tr>
-      <tr><th data-i18n="f4k">Education</th><td data-i18n="f4v"></td></tr>
-      <tr><th data-i18n="f5k">Languages</th><td data-i18n="f5v"></td></tr>
-      <tr><th data-i18n="f6k">Location</th><td data-i18n="f6v"></td></tr>
+      <tr><th data-i18n="f1k">Experience</th><td data-i18n="f1v">10 months backend (Planhopper)</td></tr>
+      <tr><th data-i18n="f2k">Focus</th><td data-i18n="f2v">APIs, bots, audio, developer tooling</td></tr>
+      <tr><th data-i18n="f3k">Open source</th><td data-i18n="f3v">Co-creator of Lexikon (89 commits, 50 PRs)</td></tr>
+      <tr><th data-i18n="f4k">Education</th><td data-i18n="f4v">Computing Technician, Dec 2026</td></tr>
+      <tr><th data-i18n="f5k">Languages</th><td data-i18n="f5v">Spanish (native), English (advanced), German (learning)</td></tr>
+      <tr><th data-i18n="f6k">Location</th><td data-i18n="f6v">Buenos Aires · remote friendly</td></tr>
     </table>
   </section>
 
@@ -122,6 +211,7 @@
   <div class="suggest" id="chat-suggest"></div>
   <form id="chat-form"><input id="chat-input" autocomplete="off" data-i18n-placeholder="chat_ph" placeholder="Ask about experience, stack, availability…"><button data-i18n="chat_send">Send</button></form>
 </aside>
+<script src="data.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
